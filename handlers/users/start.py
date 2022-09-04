@@ -19,7 +19,7 @@ async def bot_start(message: types.Message):
         user = await db.select_user(telegram_id=message.from_user.id)
 
     await message.answer(
-        "Xush kelibsiz! Do'konimizdagi mahsulotlarni ko'rish uchun quyidagi Menu tugmasini bosing",
+        "Xush kelibsiz! Do'konimizdagi mahsulotlarni ko'rish uchun quyidagi Menu tugmasini bosing.\nAdmin bilan bog'lanish @Shahzod23_04",
         reply_markup=menu,
     )
 
